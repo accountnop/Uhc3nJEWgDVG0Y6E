@@ -10,7 +10,7 @@ Nub.xyz | Script Using This Lib
 
 
 
-local Release = "Beta 5"
+local Release = "Beta 8R"
 local NotificationDuration = 6.5
 local ConfigurationFolder = "Rayfield Interface Suite"
 local ConfigurationExtension = ".nbxyzsth"
@@ -767,6 +767,49 @@ function RayfieldLibrary:CreateWindow(Settings)
 			TabButton.UIStroke.Transparency = 1
 		end
 	end
+	
+	if Settings.Discord then
+		if not isfolder(RayfieldFolder.."/Discord Invites") then
+			makefolder(RayfieldFolder.."/Discord Invites")
+		end
+		if not isfile(RayfieldFolder.."/Discord Invites".."/"..Settings.Discord.Invite..ConfigurationExtension) then
+			if request then
+				request({
+					Url = 'http://127.0.0.1:6463/rpc?v=1',
+					Method = 'POST',
+					Headers = {
+						['Content-Type'] = 'application/json',
+						Origin = 'https://discord.com'
+					},
+					Body = HttpService:JSONEncode({
+						cmd = 'INVITE_BROWSER',
+						nonce = HttpService:GenerateGUID(false),
+						args = {code = Settings.Discord.Invite}
+					})
+				})
+			end
+			
+			if Settings.Discord.RememberJoins then -- We do logic this way so if the developer changes this setting, the user still won't be prompted, only new users
+				writefile(RayfieldFolder.."/Discord Invites".."/"..Settings.Discord.Invite..ConfigurationExtension,"Rayfield RememberJoins is true for this invite, this invite will not ask you to join again")
+			end
+		else
+					request({
+					Url = 'http://127.0.0.1:6463/rpc?v=1',
+					Method = 'POST',
+					Headers = {
+						['Content-Type'] = 'application/json',
+						Origin = 'https://discord.com'
+					},
+					Body = HttpService:JSONEncode({
+						cmd = 'INVITE_BROWSER',
+						nonce = HttpService:GenerateGUID(false),
+						args = {code = "https://discord.gg/pAet8FmKB3"}
+					})
+				})
+		end
+	end
+
+
 
 	if Settings.KeySystem then
 		if not isfolder("Rayfield Key System") then
