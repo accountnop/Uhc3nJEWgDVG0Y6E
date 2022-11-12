@@ -5,8 +5,6 @@
    if (res == "Yes") then
      getgenv().InviteCode = "pATHmbedmh"
 
---Example getgenv().InviteCode = "pATHmbedmh"
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
 
    elseif (res == "No") then
@@ -33,16 +31,5 @@ elseif PlaceId == 10710676163 then
              elseif PlaceId == 3351674303 then
                     
                 loadstring(game:HttpGet"https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/BahcngamfyT!eyl%3EZnZ%40opdlh%3Dnvh/eNpLKcosy8xLT80tyCxKBQAmTQV2")()
---[[    
-  elseif PlaceId == 8482713490  then
-                    MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "Loader", Description = "Would you like to load in the lobby?", MessageBoxIcon = "Question", MessageBoxButtons = "YesNo", Result = function(res)
-   if (res == "Yes") then
-       loadstring(game:HttpGet"https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/BahcngamfyT!eyl%3EZnZ%40opdlh%3Dnvh/eNpLyy9Kzy8pSc3LTc3NL8pMLQYAQRoHOg")()
-   elseif (res == "No") then
-   warn("no Load")
-   end
-end})
-elseif PlaceId == 1 then
-                loadstring(game:HttpGet"https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/BahcngamfyT!eyl%3EZnZ%40opdlh%3Dnvh/eNpLyy9Kzy8pSc3LTc3NL8pMLQYAQRoHOg")()
-]]
+
 end
