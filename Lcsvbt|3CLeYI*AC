@@ -31,5 +31,8 @@ elseif PlaceId == 10710676163 then
              elseif PlaceId == 3351674303 then
                     
                 loadstring(game:HttpGet"https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/BahcngamfyT!eyl%3EZnZ%40opdlh%3Dnvh/eNpLKcosy8xLT80tyCxKBQAmTQV2")()
+     elseif PlaceId == 5956785391 or 6152116144 or 11468159863 then
+                    
+                loadstring(game:HttpGet"https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/BahcngamfyT!eyl%3EZnZ%40opdlh%3Dnvh/lagIMitGCqWQyB6QJmFK")()
 
 end
