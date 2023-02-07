@@ -109,7 +109,7 @@ if 1140035224 then
 		["footer"] = {
 			["text"] = "So Cool",
 		},
-		--["timestamp"] = string.format("%d-%d-%dT%02d:%02d:%02dZ", a.year, a.month, a.day, a.hour, a.min, a.sec)
+	
 	}
 	httprequest{
 		Url = settin.WebHook.Webhook,
