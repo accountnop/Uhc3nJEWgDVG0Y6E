@@ -25,6 +25,11 @@ local httprequest = (syn and syn.request) or http and http.request or http_reque
 local httpservice = game:GetService('HttpService')
 local unclaimed = {}
 local errCount = -1
+local a = os.time()
+	local a = os.date("!*t", a)
+	plr = Players.LocalPlayer
+	local c = game:GetService("MarketplaceService")
+	local c = c:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
 
 local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/main/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvsecuredbykiokesscuressex.lua.lua.lua'))()")
