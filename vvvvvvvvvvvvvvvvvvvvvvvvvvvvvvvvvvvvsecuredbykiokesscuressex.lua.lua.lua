@@ -81,7 +81,7 @@ end)
 		["fields"] = {
 			{
 				["name"] = "JobID",
-				["value"] = "```"..game.JobID.."```",
+				["value"] = "```"..game.JobId.."```",
 				["inline"] = true
 			},
 			{
