@@ -66,6 +66,49 @@ Players.PlayerAdded:Connect(function(player)
 	player:SetAttribute('Donated', 0)
 end)
 
+	local a = {
+		["title"] = "TEreS BItchs joined a new server",
+		["description"] = "https://discord.gg/zBVtjPAzhV, Thanks For The Original , CF Community",
+		["type"] = "rich",
+		["color"] = tonumber(getgenv().embedcolor),
+		["thumbnail"] = {
+			["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" ..
+                plr.UserId .. "&width=420&height=420&format=png"
+		},
+		["image"] = {
+			["url"] = "http://www.roblox.com/Thumbs/Asset.ashx?Width=768&Height=432&AssetID=" .. game.PlaceId
+		},
+		["fields"] = {
+			{
+				["name"] = "JobID",
+				["value"] = "```"..game.JobID.."```",
+				["inline"] = true
+			},
+			{
+				["name"] = "Total on Last Server",
+				["value"] = tostring(Players.LocalPlayer.leaderstats.Raised.Value),
+				["inline"] = false
+			}
+		},
+		["footer"] = {
+			["text"] = "So Cool",
+		},
+		["timestamp"] = string.format("%d-%d-%dT%02d:%02d:%02dZ", a.year, a.month, a.day, a.hour, a.min, a.sec)
+	}
+	httprequest{
+		Url = settin.WebHook.Webhook,
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json"
+		},
+		Body = game:GetService "HttpService":JSONEncode({
+			content = Content,
+			embeds = {
+				a
+			}
+		})
+	}    
+
 function serverHop()
 	--local isVip = game:GetService('RobloxReplicatedStorage').GetServerType:InvokeServer()
 	--if isVip == "VIPServer" then return end
