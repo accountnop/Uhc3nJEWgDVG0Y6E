@@ -78,7 +78,7 @@ if 1140035224 then
 	else
 	tweedleakinserver = "No, Tweedsex Is Not In Server"
 	end
-    
+    plr = Players.LocalPlayer
 
 	local a = {
 		["title"] = "TEreS BItchs joined a new server",
