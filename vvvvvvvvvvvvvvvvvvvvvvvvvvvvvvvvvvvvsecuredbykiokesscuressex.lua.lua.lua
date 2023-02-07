@@ -87,12 +87,12 @@ if 1140035224 then
 
 	local a = {
 		["title"] = "TEreS BItchs joined a new server",
-		["description"] = "https://discord.gg/zBVtjPAzhV, Thanks For The Original , CF Community",
+		["description"] = "",
 		["type"] = "rich",
 		["color"] = tonumber(getgenv().embedcolor),
 		
-		["image"] = {
-			["url"] = "http://www.roblox.com/Thumbs/Asset.ashx?Width=768&Height=432&AssetID=" .. game.PlaceId
+		["thumbnail"] = {
+			["url"] = "https://tr.rbxcdn.com/bee0a55b5ed762b2170c0983d58cd764/768/432/Image/Png"
 		},
 		["fields"] = {
 			{
@@ -102,7 +102,7 @@ if 1140035224 then
 			},
 			{
 				["name"] = "Total on Last Server",
-				["value"] = tostring(Players.LocalPlayer.leaderstats.Raised.Value),
+				["value"] = "```"..tostring(Players.LocalPlayer.leaderstats.Raised.Value).."```",
 				["inline"] = false
 			}
 		},
