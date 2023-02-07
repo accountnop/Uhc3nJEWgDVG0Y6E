@@ -85,10 +85,7 @@ if 1140035224 then
 		["description"] = "https://discord.gg/zBVtjPAzhV, Thanks For The Original , CF Community",
 		["type"] = "rich",
 		["color"] = tonumber(getgenv().embedcolor),
-		["thumbnail"] = {
-			["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" ..
-                plr.UserId .. "&width=420&height=420&format=png"
-		},
+		
 		["image"] = {
 			["url"] = "http://www.roblox.com/Thumbs/Asset.ashx?Width=768&Height=432&AssetID=" .. game.PlaceId
 		},
