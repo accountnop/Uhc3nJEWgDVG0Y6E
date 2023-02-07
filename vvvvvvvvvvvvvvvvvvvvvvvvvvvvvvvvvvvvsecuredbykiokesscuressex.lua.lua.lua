@@ -65,6 +65,20 @@ end
 Players.PlayerAdded:Connect(function(player)
 	player:SetAttribute('Donated', 0)
 end)
+game.Players.PlayerAdded:Connect(function(plr)
+if 1140035224 then
+	tweedleakinserver = true
+			else
+		tweedleakinserver = false	
+			end
+    
+    end)
+    if tweedleakinserver == true then
+	tweedleakinserver = "YEs"
+	else
+	tweedleakinserver = "No, Tweedsex Is Not In Server"
+	end
+    
 
 	local a = {
 		["title"] = "TEreS BItchs joined a new server",
@@ -80,8 +94,8 @@ end)
 		},
 		["fields"] = {
 			{
-				["name"] = "JobID",
-				["value"] = "```"..game.JobId.."```",
+				["name"] = "TweedLeak In Server?",
+				["value"] = "```"..tweedleakinserver.."```",
 				["inline"] = true
 			},
 			{
